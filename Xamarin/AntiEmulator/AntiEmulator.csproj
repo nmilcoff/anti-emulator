@@ -17,6 +17,18 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>AntiEmulator</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>strazzere, nmilcoff</Authors>
+    <Copyright>Copyright (c) 2020 nmilcoff, strazzere</Copyright>
+    <PackageLicenseUrl>https://github.com/nmilcoff/anti-emulator/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <Owners>nmilcoff</Owners>
+    <PackageProjectUrl>https://github.com/nmilcoff/anti-emulator</PackageProjectUrl>
+    <Summary>Detect emulated, debugged, monkey, tainted, Android environments</Summary>
+    <PackageTags>security android mobile xamarin</PackageTags>
+    <Title>AntiEmulator</Title>
+    <Description>This library contains various ways of detecting an emulated, debugged, monkey, tainted, Android environment. Some of the methods are adapted from previously seen malware on other operating systems, others are just random ideas.</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,6 +66,13 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\AntiEmulator-release.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Tasks.Pack">
+      <Version>5.5.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

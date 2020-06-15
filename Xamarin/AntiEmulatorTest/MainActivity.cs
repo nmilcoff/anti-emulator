@@ -171,9 +171,10 @@ namespace AntiEmulatorTest
             }
         }
 
-        public void Log(String msg)
+        public void Log(string msg)
         {
             Android.Util.Log.Verbose("AntiEmulator", msg);
+            System.Diagnostics.Debug.WriteLine(msg, "AntiEmulator");
         }
     }
 }

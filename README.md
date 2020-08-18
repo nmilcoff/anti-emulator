@@ -4,6 +4,8 @@ This project contains Xamarin.Android bindings for the original [anti-emulator](
 
 The repository is a fork due to the fact I needed to make some edits to the original library to generate the bindable .aar (the Android library is not publicly distributed and the author [doesn't have plans to do so](https://github.com/strazzere/anti-emulator/issues/13)).
 
+🔒📌 Note: I highly encourage you to install [BreachDetector](https://github.com/nmilcoff/BreachDetector) instead, which will allow you to work in a cross platform way.
+
 [![Build status](https://dev.azure.com/nicolasmilcoff/AntiEmulator/_apis/build/status/nmilcoff.anti-emulator)](https://dev.azure.com/nicolasmilcoff/AntiEmulator/_build/latest?definitionId=2)
 [![NuGet](https://img.shields.io/nuget/v/AntiEmulator.svg?label=NuGet)](https://www.nuget.org/packages/AntiEmulator/)
 
